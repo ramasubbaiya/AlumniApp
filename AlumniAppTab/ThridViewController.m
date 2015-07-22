@@ -19,17 +19,24 @@
    
     NSURL *url = [NSURL URLWithString:@"http://www.lambtoncollege.ca/About_Us/Alumni_Association/Alumni_Benefits/Other/"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [_dealsWeb loadRequest:request];
+    [dealsWeb loadRequest:request];
+    [dealsWeb setDelegate:self];
 }
 
 - (void)viewDidLayoutSubviews {
-    _dealsWeb.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    dealsWeb.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
 }
 
+
+
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
+    NSLog(@"Did finish load");
     NSString* code = @"document.getElementsByTagName('header')[0].style.display = 'none'; document.getElementsByTagName('footer')[0].style.display = 'none'; var leftsideBar = document.getElementById('leftside-bar'); if (leftsideBar != null) leftsideBar.style.display = 'none'; var wrapper = document.getElementById('wrapper'); if (wrapper != null) wrapper.style.display = 'none'; var content = document.getElementById('main-content'); var topLevel = content.parentNode.parentNode.parentNode; content = topLevel.parentNode.insertBefore(content, topLevel); topLevel.style.display = 'none';";
-    [webView stringByEvaluatingJavaScriptFromString: code];
+    [dealsWeb stringByEvaluatingJavaScriptFromString: code];
+    //[super webViewDidFinishLoad:];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

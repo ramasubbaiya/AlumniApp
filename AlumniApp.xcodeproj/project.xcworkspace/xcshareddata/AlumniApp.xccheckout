@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>827E3780-BEBF-4C12-A009-F187AC9E3909</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AlumniApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E7D1F714C14EBE722BA0893284CC443A01A4231F</key>
+		<string>https://github.com/ramasubbaiya/AlumniApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AlumniApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E7D1F714C14EBE722BA0893284CC443A01A4231F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ramasubbaiya/AlumniApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E7D1F714C14EBE722BA0893284CC443A01A4231F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E7D1F714C14EBE722BA0893284CC443A01A4231F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AlumniAppTab</string>
+		</dict>
+	</array>
+</dict>
+</plist>

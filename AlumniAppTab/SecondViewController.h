@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController<UIWebViewDelegate>{
+    
+    IBOutlet UIWebView *eventsWeb;
+}
 
-@property (weak, nonatomic) IBOutlet UIWebView *eventsWeb;
+//@property (weak, nonatomic) IBOutlet UIWebView *eventsWeb;
 
 @end
 

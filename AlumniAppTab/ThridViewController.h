@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThridViewController : UIViewController
+@interface ThridViewController : UIViewController <UIWebViewDelegate>{
+    
+    IBOutlet UIWebView *dealsWeb;
+}
 
-@property (weak, nonatomic) IBOutlet UIWebView *dealsWeb;
+
+//@property (weak, nonatomic) IBOutlet UIWebView *dealsWeb;
 
 @end
