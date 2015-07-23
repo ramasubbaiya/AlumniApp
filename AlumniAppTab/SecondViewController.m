@@ -32,7 +32,7 @@
 
 
 - (void)viewDidLayoutSubviews {
-    eventsWeb.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    eventsWeb.frame = CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height-20);
 }
 
 - (void)didReceiveMemoryWarning {

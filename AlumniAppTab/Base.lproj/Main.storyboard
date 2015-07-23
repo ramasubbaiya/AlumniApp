@@ -2,8 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Membership Card-->
@@ -18,73 +16,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="157.5" height="41.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="221" y="378" width="157.5" height="41.5"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="194.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="203" y="428" width="194.5" height="17"/>
-                                </variation>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="membershipCard" translatesAutoresizingMaskIntoConstraints="NO" id="H7u-HS-4Sy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="membershipCard" translatesAutoresizingMaskIntoConstraints="NO" id="5FW-s6-CBJ">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="247" width="600" height="376"/>
+                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="H7u-HS-4Sy" secondAttribute="bottom" constant="163" id="BTW-Zn-muN"/>
-                            <constraint firstAttribute="centerY" secondItem="H7u-HS-4Sy" secondAttribute="centerY" id="BWF-cz-vSd"/>
-                            <constraint firstAttribute="centerX" secondItem="H7u-HS-4Sy" secondAttribute="centerX" id="NsL-9h-9Lx"/>
-                            <constraint firstItem="H7u-HS-4Sy" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="192" id="UaB-Mq-X2d"/>
-                            <constraint firstItem="H7u-HS-4Sy" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-16" id="Wfl-jX-HE5"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="H7u-HS-4Sy" secondAttribute="trailing" constant="-16" id="rKE-TV-jgL"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="5FW-s6-CBJ" secondAttribute="bottom" constant="170" id="5pL-60-2Z0"/>
+                            <constraint firstAttribute="centerX" secondItem="5FW-s6-CBJ" secondAttribute="centerX" id="GRK-cM-nFh"/>
+                            <constraint firstItem="5FW-s6-CBJ" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="227" id="RJT-IR-mpa"/>
+                            <constraint firstAttribute="trailing" secondItem="5FW-s6-CBJ" secondAttribute="trailing" constant="-3" id="a9n-Ha-KxA"/>
+                            <constraint firstAttribute="centerY" secondItem="5FW-s6-CBJ" secondAttribute="centerY" id="fyQ-KT-WSy"/>
+                            <constraint firstItem="5FW-s6-CBJ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="g3Z-Ar-rvh"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="H7u-HS-4Sy"/>
+                                <exclude reference="5FW-s6-CBJ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="BWF-cz-vSd"/>
-                                <exclude reference="NsL-9h-9Lx"/>
-                                <exclude reference="UaB-Mq-X2d"/>
-                                <exclude reference="Wfl-jX-HE5"/>
-                                <exclude reference="rKE-TV-jgL"/>
-                                <exclude reference="BTW-Zn-muN"/>
+                                <exclude reference="GRK-cM-nFh"/>
+                                <exclude reference="RJT-IR-mpa"/>
+                                <exclude reference="a9n-Ha-KxA"/>
+                                <exclude reference="fyQ-KT-WSy"/>
+                                <exclude reference="g3Z-Ar-rvh"/>
+                                <exclude reference="5pL-60-2Z0"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="5FW-s6-CBJ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
-                                <include reference="H7u-HS-4Sy"/>
+                                <include reference="5FW-s6-CBJ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="BWF-cz-vSd"/>
-                                <include reference="NsL-9h-9Lx"/>
-                                <include reference="UaB-Mq-X2d"/>
-                                <include reference="Wfl-jX-HE5"/>
-                                <include reference="rKE-TV-jgL"/>
-                                <include reference="BTW-Zn-muN"/>
+                                <include reference="GRK-cM-nFh"/>
+                                <include reference="RJT-IR-mpa"/>
+                                <include reference="a9n-Ha-KxA"/>
+                                <include reference="fyQ-KT-WSy"/>
+                                <include reference="g3Z-Ar-rvh"/>
+                                <include reference="5pL-60-2Z0"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="5FW-s6-CBJ"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Membership Card" image="User" id="acW-dT-cKf"/>
-                    <connections>
-                        <outlet property="membershipImage" destination="H7u-HS-4Sy" id="Kt4-jI-51Y"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,6 +109,7 @@
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="buv-Gb-Aja">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="751"/>
                                 </variation>

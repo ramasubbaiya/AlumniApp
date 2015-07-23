@@ -24,7 +24,7 @@
 }
 
 - (void)viewDidLayoutSubviews {
-    dealsWeb.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    dealsWeb.frame = CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height-20);
 }
 
 

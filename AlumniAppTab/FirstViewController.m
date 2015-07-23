@@ -12,12 +12,16 @@
 
 @end
 
+
+
 @implementation FirstViewController
+
+//@synthesize membershipImage;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-}
+    
+  }
 
 
 
